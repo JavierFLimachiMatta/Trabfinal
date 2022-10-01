@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABAJO FINAL</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+        .carousel img{
+            align-content: center;
+        }
+    </style>
+    <link
+      
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!--barra de navegación-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hotel Aeronáutico</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Hotel Aeronáutico</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!--FIN barra de navegación-->
+  <!--slider-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="https://186.121.206.34/VARIEDADES/DIGEDEBIS/img/portfolio/hotel-lapaz.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="DIGEDEBIS" data-noaft="1" style="width: 1520px; height: 800px; margin: 0px;" class="d-block w-100" alt="...">
+  </div>
+  <div class="carousel-item">
+    <img src= "https://186.121.206.34/VARIEDADES/DIGEDEBIS/img/portfolio/hotel-santacruz.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="DIGEDEBIS" data-noaft="1" style="width: 1520px; height: 800px; margin: 0px;" class="d-block w-100" alt="...">
+  </div>
+  <div class="carousel-item">
+    <img src="https://186.121.206.34/VARIEDADES/DIGEDEBIS/img/portfolio/circulo-lp.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="DIGEDEBIS" data-noaft="1" style="width: 1520px; height: 800px; margin: 0px;" class="d-block w-100" alt="...">
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+<h1>
+  <div class="container"> Registro de Huespedes</div>
+</h1>
+</div>
+  <!--FIN slider-->
+  <!--contenido-->
+  <div class="container">
+  <section style="height: 360px">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+            
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido">
+          </div>
+          <button onclick="guardar()" type="button" class="btn btn-primary">Guardar</button>
+          <button onclick="listar()" type="button" class="btn btn-success ">Listar</button>
+        </form>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <ul class="list-group" id ="mostrarLista">
+          <!--<li class="list-group-item">An item</li>
+          //<li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>-->
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>
+      <div class="container"> Registro y costo de Habitaciones</div>
+    </h1>
+  </section>
+  </div>
+
+  <!--FIN contenido-->
+  <!--pie de pagina--
+  div class="row">
+
+     </div><div class="col-xs-12 col-md-4" style="background-color: aquamarine;">
+    1
+     </div>
+     <div class="col-xs-12 col-md-4" style="background-color:azure;">
+    2
+     </div>
+     <div class="col-xs-12 col-md-4" style="background-color:azure;">
+    3
+     </div>
+  Fin pie de pagina-->
+
+  <script>
+    function guardar(){
+      //var _nombre=document.getElementById('nombre').value;
+      //var _apellido=document.getElementById('apellido').value;
+      //console.log(_nombre);
+      //console.log(_apellido);
+      var persona= {
+        id: Math.floor(100000 + Math.random() * 900000),
+        nombre : document.getElementById('nombre').value,
+        apellido : document.getElementById('apellido').value
+      }
+      //var art = {clave: _clave, nombre: _nombre};
+      var transaccion = db.transaction("persona", "readwrite");
+      const objeto = transaccion.objectStore('persona');
+        // insertar en el objeto
+        //const cargarInfo= objeto.add(informacion)
+        const cargarInfo = objeto.add(persona);
+       console.log("cargar informacion",cargarInfo);
+        } 
+        function listar(){
+          var lista = document.getElementById("mostrarLista");
+          console.log(lista);
+          db = dbConnection.result;
+         // lectura de tablas
+        var transaccion = db.transaction("persona", "readonly");
+        const objeto = transaccion.objectStore('persona');
+        console.log(objeto);
+        // iterar los elementos
+        const cursor = objeto.openCursor();
+        cursor.onsuccess = (e) =>{
+        const c = e.target.result;
+        if (c){
+          // insertando en el html de UL, se realizo algunas concatenaciones adicionales
+          lista.innerHTML += "<li class='list-group-item'>"+c.value['nombre']+"---"+c.value['apellido']+"<button onclick='eliminar("+c.value['id']+")' type='button' class='btn btn-danger'>Eliminar</button></li>"
+          c.continue();
+        } else {
+          console.log("no tiene datos");
+        }
+        }
+        }
+        function eliminar(id){
+          console.log(id);
+          var transaccion = db.transaction("persona", "readwrite");
+          const objeto = transaccion.objectStore('persona');
+         // insertar en el objeto
+         const eliminado = objeto.delete(id);
+         eliminado.onsuccess = () => {
+         listar();
+          }
+         eliminado.onerror = (error) => {
+        console.log(error);
+        }
+        }                
+       </script>
+       <!--------------------------------------------------------------------->
+    <header class="container-fluid bg-dark position-sticky top-0">
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item text-primary" role="presentation">
+          <a
+            class="nav-link "
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >Hotel Aeronáutico</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Habitaciones</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Habitaciones solicitadas</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Habitación añadido!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Habitación removido!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        1
+      </div>
+      <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <h2 class="h4 m-4 text-primary">Habitaciones</h2>
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Habitación Simple</h5>
+              <img src="./img/4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Te ofrece el hospedaje perfecto para una estadía calidad junto a tu familia.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Bs. 160</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Habitaciones Dobles</h5>
+              <img src="./img/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Te ofrece el hospedaje perfecto para una estadía calidad junto a tu familia.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Bs. 220</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Habitaciones Triples</h5>
+              <img src="./img/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Te ofrece el hospedaje perfecto para una estadía calidad junto a tu familia.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Bs. 300</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Habitaciones Matrimoniales</h5>
+              <img src="./img/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Te ofrece el hospedaje perfecto para una estadía calidad junto a tu familia.</p>
+                <h5 class="text-primary">Precio: <span class="precio">Bs. 380</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Login y Register - MagtimusPro</title>
+            
+            
+        
+        </head>
+        <body>
+        
+                <main>
+        
+                    <div class="contenedor__todo">
+                        <div class="caja__trasera">
+                            <div class="caja__trasera-login">
+                                <h3>¿Ya tienes una cuenta?</h3>
+                                <p>Inicia sesión para entrar en la página</p>
+                                <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                            </div>
+                            <div class="caja__trasera-register">
+                                <h3>¿Aún no tienes una cuenta?</h3>
+                                <p>Regístrate para que puedas iniciar sesión</p>
+                                <button id="btn__registrarse">Regístrarse</button>
+                            </div>
+                        </div>
+        
+                        <!--Formulario de Login y registro-->
+                        <div class="contenedor__login-register">
+                            <!--Login-->
+                            <form action="" class="formulario__login">
+                                <h2>Iniciar Sesión</h2>
+                                <input type="text" placeholder="Correo Electronico">
+                                <input type="password" placeholder="Contraseña">
+                                <button>Entrar</button>
+                            </form>
+        
+                            <!--Register-->
+                            <form action="" class="formulario__register">
+                                <h2>Regístrarse</h2>
+                                <input type="text" placeholder="Nombre completo">
+                                <input type="text" placeholder="Correo Electronico">
+                                <input type="text" placeholder="Usuario">
+                                <input type="password" placeholder="Contraseña">
+                                <button>Regístrarse</button>
+                            </form>
+                        </div>
+                    </div>
+        
+                  </main>
+        </body>
+
+        </div>
+
+      </div>
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Habitación</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+        
+          
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success">COMPRAR</button>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+    <footer class="bg-dark p-3 mt-5">
+      <p class="text-center m-0 text-muted">HOTEL - AERONÁUTICO</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/indexdb.js"></script>
+  </body>
+  
+</html>
